@@ -1,0 +1,78 @@
+add_newline = true
+
+scan_timeout = 10
+
+[character]
+success_symbol = "🦄 [❯](bold green)"
+error_symbol = "🙅‍♂️ [❯](bold red)"
+
+[package]
+disabled = false
+
+[username]
+disabled = true
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+
+[memory_usage]
+show_percentage = true
+show_swap = true
+threshold = -1
+symbol = " "
+separator = "/"
+style = "bold dimmed green"
+
+[env_var]
+disabled = false
+
+[time]
+disabled = false
+format = '⏳ [\[ $time \]]($style) '
+time_format = "%T"
+utc_time_offset = "local"
+time_range = "10:00:00~14:00:00"
+
+[docker_content]
+symbol = "🐳"
+
+[aws]
+style = "bold blue"
+symbol = "🅰️ "
+display_items = "region"
+[aws.region_aliases]
+ap-southeast-2 = "au"
+us-east-1 = "va"
+
+[git_branch]
+symbol = "🌲 "
+truncation_length = 20
+truncation_symbol = ""
+
+[git_commit]
+truncation_length = 30
+
+[git_state]
+progress_divider = " of "
+cherry_pick = "🍒 PICKING"
+
+[git_status]
+conflicted = "😱"
+ahead = "🏎💨"
+behind = "😓"
+diverged = "😖"
+untracked = "😳"
+stashed = "📦"
+modified = "📝"
+staged.value = "++"
+staged.style = "green"
+staged_count_enabled = true
+staged_count_style = "green"
+renamed = "💞"
+deleted = "🗑"
